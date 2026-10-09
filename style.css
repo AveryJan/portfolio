@@ -39,8 +39,9 @@ a {
   gap: 14px;
 }
 
-.name {
-  font-size: 1.8rem;
+.profile_name {
+  font-size: 2.1rem;
+  color: #f8f9fa;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -62,20 +63,20 @@ a {
   transform: scale(1.08);
 }
 
-.navbar {
+.topmenu {
   display: flex;
   gap: 22px;
   flex-wrap: wrap;
 }
 
-.navbar a {
+.topmenu a {
   position: relative;
   padding: 8px 10px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
-.navbar a::after {
+.topmenu a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -86,11 +87,13 @@ a {
   transition: width 0.3s ease;
 }
 
-.navbar a:hover {
+.topmenu a:hover {
   color: #fbbf24;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-.navbar a:hover::after {
+.topmenu a:hover::after {
   width: 100%;
 }
 
@@ -199,7 +202,7 @@ h2 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.skill-item {
+.skill {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,13 +214,14 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-item:hover {
+.skill:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
-.skill-logo {
-  font-size: 2.2rem;
+.skill img {
+  width: 52px;
+  height: 52px;
   margin-bottom: 10px;
 }
 
@@ -319,7 +323,7 @@ h2 {
     padding: 20px;
   }
 
-  .navbar {
+  .topmenu {
     width: 100%;
     justify-content: flex-start;
   }
