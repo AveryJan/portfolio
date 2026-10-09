@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="name-box">
+        <a class="home-btn" href="#home" aria-label="Home">🏠</a>
+        <h1 class="name">Avery Johnson</h1>
+      </div>
+
+      <nav class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#projects">Project Details</a>
+        <a href="#skills">Skills</a>
+        <a href="#recommendations">Recommendations</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section id="about" class="section">
+        <div class="about-content">
+          <div class="about-text">
+            <p class="section-tag">About Me</p>
+            <h2>Creative Developer & Problem Solver</h2>
+            <p>
+              I am a passionate software developer with a strong interest in
+              building meaningful digital experiences. I enjoy creating clean,
+              user-friendly applications that solve real-world problems. My focus
+              is on front-end development, design thinking, and continuous
+              learning.
+            </p>
+            <p>
+              I have experience working on multiple projects involving web
+              design, user interfaces, APIs, and responsive development. I enjoy
+              collaborating with teams, improving user experience, and turning
+              ideas into functional, engaging products.
+            </p>
+            <div class="about-buttons">
+              <a href="#projects" class="btn primary">View Projects</a>
+              <a href="#recommendations" class="btn secondary">Testimonials</a>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
+              alt="Profile"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <p class="section-tag">Project Details</p>
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+              Designed and built a personal portfolio to showcase projects,
+              skills, and professional experience with a responsive layout.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Task Manager App</h3>
+            <p>
+              Developed a productivity app that helps users track tasks,
+              deadlines, and progress with a simple and intuitive interface.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>E-Commerce Landing Page</h3>
+            <p>
+              Created a modern storefront landing page featuring product
+              highlights, call-to-action sections, and mobile-friendly design.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <p class="section-tag">Skills</p>
+        <h2>My Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-logo">⚛️</span>
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-logo">🟨</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-logo">🎨</span>
+            <span>CSS</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-logo">🧩</span>
+            <span>HTML</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-logo">🟦</span>
+            <span>Python</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="recommendations" class="section">
+        <p class="section-tag">Recommendations</p>
+        <h2>What People Say</h2>
+
+        <div id="recommendations-list" class="recommendations-list">
+          <div class="recommendation-item">
+            <p>
+              "Avery is a thoughtful developer who always pays attention to
+              detail and user experience. Their work is polished and effective."
+            </p>
+            <h4>- Sarah M.</h4>
+          </div>
+
+          <div class="recommendation-item">
+            <p>
+              "Excellent communication, creative ideas, and strong technical
+              execution. A pleasure to work with."
+            </p>
+            <h4>- Daniel R.</h4>
+          </div>
+
+          <div class="recommendation-item">
+            <p>
+              "Avery brings both professionalism and creativity to every project.
+              They consistently exceed expectations."
+            </p>
+            <h4>- Emily T.</h4>
+          </div>
+        </div>
+
+        <form id="recommendation-form" class="recommendation-form">
+          <input
+            id="person-name"
+            type="text"
+            placeholder="Your Name"
+            required
+          />
+          <textarea
+            id="recommendation-text"
+            rows="4"
+            placeholder="Write your recommendation"
+            required
+          ></textarea>
+          <button type="submit" id="submit-btn">Submit Recommendation</button>
+        </form>
+      </section>
+    </main>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <p>Recommendation submitted successfully!</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
